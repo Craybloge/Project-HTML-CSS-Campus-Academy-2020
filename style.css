@@ -1,9 +1,42 @@
-p
+html
 {
-    color: blue;
+    color: #494E5F;
 }
 .titre
 {
-    background-color: aquamarine;
+    background-color: #C4E2CA;
     color : #283747;
+}
+div.informations_personnelles 
+{   
+	width:400px;
+	height:600px;
+    background-color:#C4E2CA;
+    
+}
+div.presentation
+{   
+    width:400px;
+    text-align: center;
+}
+.photo
+{
+object-fit: cover;
+
+width: 300px;
+height: 300px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+div.right
+{
+    float:right;
+    
+}
+div.left
+{
+    float: left;
+    
 }
