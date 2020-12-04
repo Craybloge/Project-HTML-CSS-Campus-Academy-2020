@@ -4,3 +4,4 @@
 [1203/111535.135:ERROR:settings.cc(325)] Settings version is not 1
 [1203/120204.978:ERROR:settings.cc(325)] Settings version is not 1
 [1203/152947.723:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
+[1204/093539.973:ERROR:settings.cc(325)] Settings version is not 1

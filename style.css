@@ -1,6 +1,5 @@
 html {
     color: #494E5F;
-    vertical-align: auto;
     font-family: Montserrat;
 }
 .name {
@@ -13,7 +12,6 @@ html {
     height: 1.5em; 
     background-color: #C4E2CA;
 }
-
 
 div.informations_personnelles {   
     width:400px;
