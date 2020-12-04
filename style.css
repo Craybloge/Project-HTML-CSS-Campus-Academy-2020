@@ -4,6 +4,7 @@ html {
 }
 .name {
     font-family: Montserrat;
+    margin-top: -0em;
 }
 .alternance {
     letter-spacing: 2px;
@@ -12,11 +13,13 @@ html {
     height: 1.5em; 
     background-color: #C4E2CA;
 }
-
-div.informations_personnelles {   
+.carre_vert{
     width:400px;
-    height:700px;
+    height:600px;
     background-color:#C4E2CA;
+}
+div.informations_personnelles {   
+    margin-left: 10px;
 }
 
 .profil_personnel{
@@ -40,8 +43,14 @@ div.presentation {
     max-height: 1.5em;
 }
 .sous-titre{
-    font-size: 1.5em;
-    line-height: 0.3em;
+    font-size: 1.3em;
+    margin-bottom: -1em;
+}
+.sous-titre_gauche, .date_lieu{
+    margin-bottom: -0.8em;
+}
+.mcdo .sous-titre, .campus_academy .sous-titre{
+    margin-top: -0.8em;
 }
 div.right {
     margin-left: 410px;
