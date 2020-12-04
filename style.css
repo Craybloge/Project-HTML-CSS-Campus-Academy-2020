@@ -13,6 +13,9 @@ html {
     height: 1.5em; 
     background-color: #C4E2CA;
 }
+.titre_texte{
+    margin-left: 5px;
+}
 .carre_vert{
     width:400px;
     height:600px;
