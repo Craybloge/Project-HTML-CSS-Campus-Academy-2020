@@ -1,38 +1,38 @@
-html {
+page.resume{
     color: #494E5F;
     font-family: Montserrat;
 }
-.name {
+page.resume .name {
     font-family: Montserrat;
     margin-top: -0em;
 }
-.alternance {
+page.resume .alternance {
     letter-spacing: 2px;
 }
-.titre {
+page.resume .titre {
     height: 1.5em; 
     background-color: #C4E2CA;
 }
-.titre_texte{
+page.resume .titre_texte{
     margin-left: 5px;
 }
-.carre_vert{
+page.resume .carre_vert{
     width:400px;
     height:600px;
     background-color:#C4E2CA;
 }
-div.informations_personnelles {   
+page.resume div.informations_personnelles {   
     margin-left: 10px;
 }
 
-.profil_personnel{
+page.resume .profil_personnel{
     margin-left: 100px;
 } 
-div.presentation {   
+page.resume div.presentation {   
     width:400px;
     text-align: center;
 }
-.photo {
+page.resume .photo {
     object-fit: cover;
 
     width: 300px;
@@ -42,27 +42,90 @@ div.presentation {
     margin-right: auto;
     width: 50%;
 }
-.titre_image {
+page.resume .titre_image {
     max-height: 1.5em;
 }
-.sous-titre{
+page.resume .sous-titre{
     font-size: 1.3em;
     margin-bottom: -1em;
 }
-.sous-titre_gauche, .date_lieu{
+page.resume .sous-titre_gauche, page.resume .date_lieu{
     margin-bottom: -0.8em;
 }
-.mcdo .sous-titre, .campus_academy .sous-titre{
+page.resume .mcdo .sous-titre, page.resume .campus_academy .sous-titre{
     margin-top: -0.8em;
 }
-div.right {
+page.resume div.right {
     margin-left: 410px;
     width: 600px;   
 }
-div.left {
+page.resume div.left {
     float: left;    
 }
-ul {
+page.resume ul {
     list-style-image: "-";
     padding-left: 1em;
 }
+.accueil {
+    background: url("images/paysage-montagneux-reflet.jpg") fixed no-repeat top right;
+}
+
+.accueil h1{
+    font-size: 10em;
+}
+#menu-accordeon {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+    width: 400px;
+  }
+  #menu-accordeon ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+  }
+  #menu-accordeon li {
+     background-color:#729EBF; 
+     background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+     border-radius: 6px;
+     margin-bottom:2px;
+     box-shadow: 3px 3px 3px #999;
+     border:solid 1px #333A40
+  }
+  #menu-accordeon li li {
+     max-height:0;
+     overflow: hidden;
+     transition: all .5s;
+     border-radius:0;
+     background: #444;
+     box-shadow: none;
+     border:none;
+     margin:0
+  }
+  #menu-accordeon a {
+    display:block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 0;
+    font-family: verdana;
+    font-size:1.2em
+  }
+  #menu-accordeon ul li a, #menu-accordeon li:hover li a {
+    font-size:1em
+  }
+  #menu-accordeon li:hover {
+     background: #729EBF
+  }
+  #menu-accordeon li li:hover {
+     background: #999;
+  }
+  #menu-accordeon ul li:last-child {
+     border-radius: 0 0 6px 6px;
+     border:none;
+  }
+  #menu-accordeon li:hover li {
+    max-height: 15em;
+  }
