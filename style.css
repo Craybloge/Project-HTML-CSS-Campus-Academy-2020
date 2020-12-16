@@ -66,6 +66,11 @@ page.resume ul {
     list-style-image: "-";
     padding-left: 1em;
 }
+/* @media screen and (max-width: 640px) {​​​​
+    body {​​​​
+        background-color: red;
+    }​​​​
+}​​​​ */
 .accueil{
     background-color: #FBFBF8;
 }
@@ -143,3 +148,8 @@ page.resume ul {
   #menu-accordeon li:hover li {
     max-height: 15em;
   }
+  @media screen and (max-width: 640px) {​​​​
+​​​​    .menu_titre_texte {
+    
+}
+}​​​​
