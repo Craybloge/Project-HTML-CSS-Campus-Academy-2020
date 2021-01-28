@@ -56,100 +56,112 @@ page.resume .mcdo .sous-titre, page.resume .campus_academy .sous-titre{
     margin-top: -0.8em;
 }
 page.resume div.right {
-    margin-left: 410px;
+    float: left;
+    margin-left: 0px;
     width: 600px;   
 }
 page.resume div.left {
     float: left;    
+    width: 410px;
 }
 page.resume ul {
-    list-style-image: "-";
     padding-left: 1em;
 }
-/* @media screen and (max-width: 640px) {​​​​
-    body {​​​​
-        background-color: red;
-    }​​​​
-}​​​​ */
+@media screen and (max-width: 640px) 
+{
+    ​​​​page.resume div.left{
+        width: 100%;
+    }
+    page.resume div.right{
+        float: left;
+        margin-left: 0px;
+    }    ​​​​
+    page.resume .photo{
+        width: 100%;
+    }
+}
+​​​​
 .accueil{
-    background-color: #FBFBF8;
+    background-color: white ;
+    margin: 0px;
 }
 .accueil .header {
-    background: url("images/paysage-montagneux-reflet.jpg") no-repeat;
-    background-size: cover;
     float: left;
-    width: 100%;
-    height: auto;
+
 }
 .logo{
+    margin-top: 0px;
     max-width: 10px;
     height: auto;
-    float: right;;
+    float: left;
     margin: 20px;
 }
 .accueil h1{
     font-size: 100px;
 }
+.menus {
+    float: right;
+}
 #menu-accordeon {
-    float: left;
     padding:0;
     margin:0;
     list-style:none;
     text-align: center;
     width: 400px;
     background-color:rgba(205, 255, 191, 0.7);
-  }
-  #menu-accordeon ul {
+}
+#menu-accordeon ul {
     padding:0;
     margin:0;
     list-style:none;
     text-align: center;
-  }
-  #menu-accordeon li {
-     border-radius: 6px;
-     margin-bottom:2px;
+}
+#menu-accordeon li {
+    border-radius: 6px;
+    margin-bottom:2px;
 
-     border:solid 1px #333A40
-  }
-  #menu-accordeon li li {
-     max-height:0;
-     overflow: hidden;
-     transition: all .5s;
-     border-radius:0;
-     background: #e6fcea;
-     box-shadow: none;
-     border:none;
-     margin:0
-  }
-  #menu-accordeon a.menu_titre_texte{
+    border:solid 1px #333A40
+}
+#menu-accordeon li li {
+    max-height:0;
+    overflow: hidden;
+    transition: all .5s;
+    border-radius:0;
+    background: #e6fcea;
+    box-shadow: none;
+    border:none;
+    margin:0
+}
+#menu-accordeon a.menu_titre_texte{
     color: #000;
-  }
-  #menu-accordeon a {
+}
+
+#menu-accordeon a {
     display:block;
     text-decoration: none;
     color: #000;
     padding: 8px 0;
     font-family: verdana;
     font-size:1.2em
-  }
-  #menu-accordeon ul li a, #menu-accordeon li:hover li a {
+}
+#menu-accordeon ul li a, #menu-accordeon li:hover li a {
     font-size:1em
-  }
-  #menu-accordeon li:hover {
-     background: #729EBF
-  }
-  #menu-accordeon li li:hover {
-     background:  #C4E2CA;
-  }
-  #menu-accordeon ul li:last-child {
-     border-radius: 0 0 6px 6px;
-     border:none;
-  }
-  #menu-accordeon li:hover li {
+}
+#menu-accordeon li:hover {
+    background: #729EBF
+}
+#menu-accordeon li li:hover {
+    background:  #C4E2CA;
+}
+#menu-accordeon ul li:last-child {
+    border-radius: 0 0 6px 6px;
+    border:none;
+}
+#menu-accordeon li:hover li {
     max-height: 15em;
-  }
-  @media screen and (max-width: 640px) {​​​​
+}
+@media screen and (max-width: 640px) {​​​​
     #menu-accordeon{
         width: 100%;
-    }
-    }​​​​
+    }   
+}​​​

@@ -18,7 +18,13 @@
 
 
 <body style="margin: 0px">
-    <canvas width="800" height="800" id="myCanvas"></canvas>
+    <canvas id="myCanvas"></canvas>
+    <script>        
+        var canv = document.getElementById('myCanvas'),
+            c = canv.getContext('2d');
+    canv.width = window.innerWidth-5;
+    canv.height = window.innerHeight-5;
+    </script>
     <script src="script.js"></script>
 </body>
 

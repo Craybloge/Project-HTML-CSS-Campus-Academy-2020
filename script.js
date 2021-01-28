@@ -1,12 +1,14 @@
 (function(){
     var canv = document.getElementById('myCanvas'),
     c = canv.getContext('2d'),
-    gravity = 0.1,
-    dampening = 0.99,
-    pullStrength = 0.01,
-    circles = [ ],
-    i, numCircles = 10,
-    repulsion = 1;
+        gravity = 0.05,
+        dampening = 0.995,
+        pullStrength = 0.005,
+        circles = [ ],
+        i, numCircles = 25,
+        repulsion = 1,
+        mouseDown = false,
+        mouseX, mouseY;
 
 
     for(i = 0; i< numCircles; i++){
@@ -16,6 +18,7 @@
             //(vx, vy) sont les vecteurs de vélocités
             vx: 0,
             vy: 0,    
+            // radius: Math.random() *20 + 10
             radius: Math.random() *20 + 10
         });
     }
@@ -23,7 +26,7 @@
 
 
 function executeFrame(){
-    var i, circle;
+    var i, j, circle;
     for(i = 0; i< numCircles; i++){
         circle = circles[i];
      
@@ -40,26 +43,28 @@ function executeFrame(){
 
     //rebond au sol
     if(circle.y + circle.radius > canv.height){
-        // circle.y = canv.height - circle.radius;
         circle.vy = -Math.abs(circle.vy);
     }
 
     //rebond à droite
     if(circle.x + circle.radius > canv.width){
-        // circle.y = canv.height - circle.radius;
         circle.vx = -Math.abs(circle.vx);
     }
 
-    // // rebond à gauche
-    // if(circle.x - circle.radius < 0){
-    //     // circle.y = canv.height - circle.radius;
-    //     circle.vx = -Math.abs(circle.vx);
-    // }
+    // rebond à gauche
+    if(circle.x - circle.radius < 0){
+        circle.vx = Math.abs(circle.vx);
+    }
+
+    // rebond en haut
+    if(circle.y - circle.radius < 0){
+    circle.vy = Math.abs(circle.vy);
+    }
 
     //Collision
     for(j = i+1; j < numCircles; j++){
-        collide(circle, circles[j])
-    }
+        collide(circle, circles[j]);
+      }
 
 
     c.beginPath();
@@ -69,37 +74,58 @@ function executeFrame(){
     c.fill();
     }
 
-    c.fillStyle = 'rgba(255,255,255, 0.2)';
+    c.fillStyle = 'rgba(255,255,255, 0.1)';
     c.fillRect(0,0, canv.width, canv.height);
+
+    //appel de la fonction qui gère l'interaction avec la souris
+    executeInteraction();
 
     requestAnimFrame(executeFrame);
 }
 
 function collide(a,b){
-    var dx = b.x -a.x,
-        dy = b.y -a.y,
-        d = Math.sqrt(dx*dx + dy*dy),
-        ux = dx / d,
-        uy = uy / d;
-
-    if(d < a.radius + b.radius){
+      var dx = b.x - a.x,
+          dy = b.y - a.y,
+          d = Math.sqrt(dx*dx + dy*dy),
+          // (ux, uy) = unit vector
+          ux = dx / d,
+          uy = dy / d;
+  
+      // si elles se superposes
+      if(d < a.radius + b.radius){
+        //alors elles se repoussent
         a.vx -= ux * repulsion;
-        a.by -= uy * repulsion;
+        a.vy -= uy * repulsion;
         b.vx += ux * repulsion;
         b.vy += uy * repulsion;
-    }
+      }
 }
-
 canv.addEventListener('mousedown', function(e){
+    mouseDown = true;
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+  });
+
+canv.addEventListener('mouseup', function(e){
+    mouseDown = false;
+  });
+canv.addEventListener('mousemove', function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+  });
+
+function executeInteraction(){
     var dx, dy, i, circle;
-    for(i = 0; i< numCircles; i++){
+    if(mouseDown){
+      for(i = 0; i < numCircles; i++){
         circle = circles[i];
-        dx = e.pageX - circle.x;
-        dy = e.pageY - circle.y;
+        dx = mouseX - circle.x;
+        dy = mouseY - circle.y;
         circle.vx += dx * pullStrength;
         circle.vy += dy * pullStrength;
+      }
     }
-});
+  }
 
 // lancer l'animation
 executeFrame();

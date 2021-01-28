@@ -2,38 +2,50 @@
 <html lang="fr">
 
 <head>
-
-   <meta charset="utf-8" />
+   <meta name="resume" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
    <link rel="stylesheet" type="text/css" href="style.css">
    <title>Mathieu Pithon</title>
+   <script>
+      // requestAnimationFrame polyfill
+      window.requestAnimFrame = (function () {
+         return window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            function (cb) { window.setTimeout(cb, 1000 / 60); };
+      }());
+   </script>
 </head>
 
-<body class="accueil">
-   <page>
-      <div>
-         <div class="header">*
-            <h1>bienvenue</h1>
-            <span class="socials">
-               <span class="logo">
-                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                     <img src="images/logo/OF.svg" id="img-OF" alt="Logo OF"/>
-                 </a>
-               </span>
-               <span class="logo">
-                  <a href="https://github.com/Craybloge" target="_blank">
-                     <img src="images/logo/github.svg" id="img-github" alt="Logo Github"/>
-                 </a>
-               </span>
-               <span class="logo">
-                  <a href="https://linkedin.com/in/mathieu-pithon" target="_blank">
-                     <img src="images/logo/linkedin.svg" id="img-linkedn" alt="Logo linkedin"/>
-                 </a>
-               </span>
-
-            </span>
+<body style="margin: 0px;" class="accueil">
+   <div>
+      <div class="header">
+         <div>
+            <canvas width="1200" height="900" id="myCanvas"></canvas>
+            <script src="script.js"></script>
          </div>
+         <span class="socials">
+            <span class="logo">
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                  <img src="images/logo/OF.svg" id="img-OF" alt="Logo OF" />
+               </a>
+            </span>
+            <span class="logo">
+               <a href="https://github.com/Craybloge" target="_blank">
+                  <img src="images/logo/github.svg" id="img-github" alt="Logo Github" />
+               </a>
+            </span>
+            <span class="logo">
+               <a href="https://linkedin.com/in/mathieu-pithon" target="_blank">
+                  <img src="images/logo/linkedin.svg" id="img-linkedn" alt="Logo linkedin" />
+               </a>
+            </span>
+         </span>
+      </div>
 
-
+      <div class="menus">
          <ul id="menu-accordeon">
             <li><a class="menu_titre_texte"> resume</a>
                <ul>
@@ -48,6 +60,7 @@
             <li><a class="menu_titre_texte">mes projets</a>
                <ul>
                   <li><a href="https://github.com/Craybloge/craybloge.github.io" target="_blank">HTML CSS</a></li>
+                  <li><a href="bouncing.html" target="_blank">JavaScript</a></li>
                   <li><a href="https://github.com/Craybloge/cours-python" target="_blank">Python classes</a></li>
                   <li><a href="https://github.com/ThomasFabrePro/Spirit-Forest" target="_blank">Unity C#</a></li>
                   <li><a href="https://github.com/kevinniel/jeux-video/blob/master/Creation/Styles_graphiques.md"
@@ -63,9 +76,6 @@
                </ul>
             </li>
          </ul>
-         <canvas id = "myCanvas">
-
-         </canvas>
       </div>
-   </page>
+   </div>
 </body>
