@@ -1,4 +1,48 @@
-::-webkit-scrollbar {
+.container {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .child {
+    scroll-snap-type: proximity;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    background-color: aqua;
+    height: 100rem;
+  }
+
+  .bubble {
+      display: flex;
+      margin-left: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ::-webkit-scrollbar {
     width: 2px;
     height: 2px;
 }
@@ -62,4 +106,4 @@ body {
     background: #cab;
     transform: rotate(90deg) translateY(80px);
     transform-origin: right top;
-}
+} */
