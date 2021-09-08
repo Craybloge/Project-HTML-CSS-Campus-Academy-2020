@@ -23,21 +23,21 @@ section{
 .one {
     background-image: url(/image/foret.png);
 }
+
 .two {
+    background: cornflowerblue;
+}
+
+.three {
     background: url(/image/esprit_attaque.png);
     background-position: center;
     background-size: 100rem;
     background-color: wheat;
 }
-.three {
-    background: cornflowerblue;
+
+.titre {
+    margin-top: -700px;
 }
-
-.a {
-    color: white;
-}
-
-
 
 
 
