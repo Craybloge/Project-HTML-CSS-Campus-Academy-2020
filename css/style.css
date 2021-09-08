@@ -21,10 +21,10 @@ section{
 }
 
 .one {
-    background: yellowgreen;
+    background-image: url(/image/foret.png);
 }
 .two {
-    background: chocolate;
+    background-image: url(/image/grotte.png);
 }
 .three {
     background: cornflowerblue;
