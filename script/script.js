@@ -20,3 +20,6 @@
     }
 
 })();
+
+window.innerWidth;
+window.innerHeight;
