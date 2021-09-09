@@ -54,7 +54,7 @@ h1 {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(../image/fond_6.png), url(../image/fond_5.png), url(../image/fond_4.png), url(../image/fond_3.png), url(../image/fond_2.png), url(../image/fond_1.png);
+    background-image: url(../image/fond_6_Grand.png), url(../image/fond_5_Grand.png), url(../image/fond_4_Grand.png), url(../image/fond_3_Grand.png), url(../image/fond_2_Grand.png), url(../image/fond_1_Grand.png);
     background-repeat: no-repeat;
     /* background-position: center; */
     background-size:20%;
