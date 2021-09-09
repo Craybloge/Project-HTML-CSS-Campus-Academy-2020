@@ -1,8 +1,8 @@
 * {
     margin: 0;
-    /* padding: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif; */
+    font-family: sans-serif;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
     font-size: 70px;
 }
 
-/* section{
+section{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ h1 {
     align-items: center;
     color: white;
     scroll-snap-align: start;
-} */
+}
 
 .container {
     scroll-snap-type: y mandatory;
@@ -32,9 +32,9 @@ h1 {
     height: 100vh;
 }
 
-/* .one {
+.one {
     background-image: url(/image/foret.png);
-} */
+}
 
 .two {
     background: cornflowerblue;
@@ -56,7 +56,7 @@ h1 {
     height: 100vh;
     background-image: url(../image/fond_6_Grand.png), url(../image/fond_5_Grand.png), url(../image/fond_4_Grand.png), url(../image/fond_3_Grand.png), url(../image/fond_2_Grand.png), url(../image/fond_1_Grand.png);
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     background-size:100%;
     background-position: 50% 50%;
 }
