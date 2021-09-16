@@ -57,7 +57,7 @@ section{
     background-image: url(../image/fond_6_Grand.png), url(../image/fond_5_Grand.png), url(../image/fond_4_Grand.png), url(../image/fond_3_Grand.png), url(../image/fond_2_Grand.png), url(../image/fond_1_Grand.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:100%;
+    background-size:160%;
     background-position: 50% 50%;
 }
 
