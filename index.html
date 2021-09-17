@@ -25,10 +25,6 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <script src="script/script.js"></script>
     <style>
-        * {
-            border: solid purple 2px;
-        }
-
         .word-wrap {
             word-wrap: break-word;
         }
@@ -37,46 +33,43 @@
 </head>
 
 <body>
-    <section class="bg-dark flex-row"
+    <div style="scroll-snap-type: y mandatory; overflow-y: scroll; height: 100vh;">
+        <section class="bg-dark flex-row"
             style="height: 100vh; background-image: url(/image/foret.png); background-position: 50%; background-size: cover;scroll-snap-align: start;">
             <div class="text-center">
                 <img src="image/titre.png" class="img-fluid" style="align-items: center;">
             </div>
-        
-    </section>
-    <section class="bg-primary vh-100" >
-        <div class="container">
-            <div class="row d-flex vh-100 ">
-                <div class="col-sm-6">
-                    <h3 class="word-wrap">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</h3>
-                </div>
-                <div class="col-sm-6">
-                    <img src="image/favicon.png" style="width: 25%;" class="img-fluid">
-                </div>
-                <div class="col-sm-6">
-                    <img src="image/favicon.png" style="width: 25%;" class="img-fluid">
-                </div>
-                <div class="col-sm-6">
-                    <h3 class="word-wrap">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</h3>
-                </div>
-                <div class="col-sm-6">
-                    <h3 class="word-wrap">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</h3>
-                </div>
-                <div class="col-sm-6">
-                    <img src="image/favicon.png" style="width: 25%;" class="img-fluid">
+
+        </section>
+        <section class="bg-primary vh-100" style="scroll-snap-align: start">
+            <div class="container">
+                <div class="row d-flex vh-100 ">
+                    <div class="col-sm-6">
+                        <h3 class="word-wrap">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="image/favicon.png" style="width: 25%;" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="image/favicon.png" style="width: 25%;" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="word-wrap">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="word-wrap">OOOOOOOOOOOOOOOOOOOOOOOOOOOO</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="image/favicon.png" style="width: 25%;" class="img-fluid">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div
-            style="height: 100vh; background-image: url(/image/esprit_attaque.png);background-position: 50%;background-size: 75%;background-repeat: no-repeat;scroll-snap-align: start;">
-        </div>
-    </section>
-
-
-
-
+        </section>
+        <section>
+            <div
+                style="height: 100vh; background-image: url(/image/esprit_attaque.png);background-position: 50%;background-size: 75%;background-repeat: no-repeat;scroll-snap-align: start;">
+            </div>
+        </section>
     </div>
 
 
