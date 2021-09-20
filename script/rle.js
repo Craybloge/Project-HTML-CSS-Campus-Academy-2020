@@ -2,7 +2,7 @@ var q = 0
 var c = 200;
 var r = 200;
 var a = new Array(r);
-var a_canvas = rle.getElementById("a");
+var a_canvas = document.getElementById("a");
 var a_context = a_canvas.getContext("2d");
 for (var i = 0; i < r; i += 1) {
     a[i] = new Array(c);
