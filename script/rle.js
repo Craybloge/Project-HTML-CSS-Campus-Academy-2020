@@ -1,6 +1,6 @@
 var q = 0
-var c = 200;
-var r = 200;
+var c = 500;
+var r = 500;
 var a = new Array(r);
 var a_canvas = document.getElementById("a");
 var a_context = a_canvas.getContext("2d");
